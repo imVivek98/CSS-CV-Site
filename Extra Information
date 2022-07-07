@@ -1,0 +1,133 @@
+Rules of default positioning in a website :
+Rule 1 :
+Content is everything -> Width is 100 % for block elements but the height is determined by your content.
+Rule 2 :
+The order of the elements is determined by your code.
+Rule 3 :
+Children sit on the parents.i.e : The children are more towards the screen than the parent element.
+Eg:<div> <h1> <span>...</span> ..</h1></div> -->  Here , the span sits on top of the h1 element and is more towards
+the viewer than the h1 element which is under it. Also , the h1 sits on top of the div element.
+
+In CSS , we can change the position of elements on the screen by using the position property as opposed to using the default
+layout.The different positions that we can apply are :
+- Static : All html pages run this property on default.
+
+- Relative :
+img{
+  position: relative;
+  left: 30px;
+}
+Here the image is positioned 30 px away from its left side.The top , bottom , left and right are called co-ordinate properties.
+The image is positioned relative to the co-ordinates that we specify.This doesn't affect any other elements.For example .
+if there is another image next to it , it isn't pushed away. In fact that image remains where it is and our image simply
+transposes on to it. The best way to think about this is that this is like the margin property in the boxed model.
+Here the image is given a margin of 30px from its left position.
+
+
+.middle{
+  background-color: red;
+  width: 100px; /*Since the boxes don't have any contents , we need to specify
+                the width and the height */
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.bottom{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  /* position: relative;
+  left: 100px;
+  bottom: 100px; */
+
+}
+
+.boton{
+  background-color : yellow;
+  width: 100px;
+  height: 100px;
+/*  position: relative;
+  left: 200px;
+  bottom: 200px; */
+
+}
+
+
+
+
+- Absolute : Here , we are positioning the element relative to its parent element.When you use absolute positioning , you are
+changing the natural flow of the document.So , the elements close to it also gets affected.
+
+<div class="red"> </div>
+.red{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 30px;
+}
+ This brings the red block outside the natural flow and it allows you to position the block in any place in the entire website
+ relative to the position of its parent.
+
+Some Code :
+
+<div class="daddy">
+  <div class="middle">
+  </div>
+  <div class="bottom">
+  </div>
+  <div class="boton">
+  </div>
+</div>
+
+
+
+.daddy{
+  background-color: grey;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 10px;
+  top: 100px;
+}
+.middle{
+  background-color: red;
+  width: 100px; /*Since the boxes don't have any contents , we need to specify
+                the width and the height */
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+.bottom{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  /* position: relative;
+  left: 100px;
+  bottom: 100px; */
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.boton{
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+/*  position: relative;
+  left: 200px;
+  bottom: 200px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* absolute positioning positions the image relative to its parent.Relative positioning positions the image relative to where its borders are at first.*/
+
+
+
+- Fixed : The fixed positioning makes sure that the image retains its position even if you scroll the web page.i.e .
+ The image is fixed in its position.
+ 

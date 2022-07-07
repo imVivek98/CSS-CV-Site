@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vivek Krishnan.R</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- Its the icon at the top where the title is-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- These links are copy pasted from fonts.google.com and we are embedding these so that even if a computer
+    that renders our website does not have our font , the browser will take them to this
+    location and grab the fonts for them -->
+  </head>
+  <body>
+    <div class="container"> <!--The div is a special html element(CONTENT DIVISION ELEMENT)
+       that allows us to divide our content up on our website.By itself , the
+       div tag does'nt do any thing unless we use CSS with it.-->
+       <img class="top-cloud" src="images/cloud.png" alt="Image of a cloud">
+       <h1><strong>I'm Vivek</strong></h1>
+       <h2>A <span class="pro">pro</span>grammer</h2>
+      <!-- <p>A <span class="pro">pro</span>grammer</p> We can only make changes
+          in specific parts of a block element like paragraph using the span tag.
+          This tag allows us to give different style properties inside the same block
+          The span is called an inline display element and takes up only the space
+          it requires.Some other inline elements are <img> , <a> etc . We cannot changes
+          the size of the inline elements normally.-->
+       <img class="bottom-cloud" src="images/cloud.png" alt="Image of a cloud">
+       <img src="images/mountain.png" alt="Image of a mountain"> <!--By default some
+         elements are block displayed(takes up the whole screen , eg : p , h1..h6 , heading etc).-->
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img class="circular ownImage" src="images/vivek.jpg" alt="Vivek's image">
+          <h2>Hello,</h2>
+          <p class="main-desc">I'm a Full Stack Web Developer.I love martial arts, reading and gymming.My dream is to one day
+           write my own book , get a black belt in karate and make a Web App that everyone in the world will love using.(All these in no particular order🤩)</p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills</h2>
+            <div class="skill-row">
+              <img class="regImage1" src="images/code.png" alt="Programming">
+              <h3>Design and Development</h3>
+              <p>I've been coding for a few years and I'm in the process of completing my degree in computer science and engineering.Ever since
+              I made my first product, I knew this was what I wanted to do.I have gained a wealth of experience developing
+              interactive Web applications.</p>
+            </div>
+            <div class="skill-row">
+              <img class="regImage2" src="images/book-stack.png" alt="Image of a stack of books">
+              <h3>I love reading</h3>
+              <p class="readpara">If you are into reading , then you are my kind of person.I prefer a fantasy escapade and authors like Tolkien and Sanderson
+                are in fact some of my dearest friends(figuratively speaking).Lets read and code together.</p>
+            </div>
+        </div>
+        <hr>
+       <div class="contact-me">
+         <h2>Get In Touch</h2>
+         <h3>If you are into martial arts or fantasy , coding or fitness , I'm your guy.</h3>
+         <p>Please feel free to contact me if you are into the same stuff that I am into, Amigo!!</p>
+        <form class="Contact" action="mailto:imvivekkr98@email.com" method="post">
+          <input class="contact" type="button" name="CONTACT ME" value="CONTACT ME">
+        </form>
+
+       </div>
+    </div>
+
+
+    <div class="bottom-container">
+       <a class="footer-link" href="www.linkedin.com/in/vivek-krishnan-r">LinkedIn</a>
+       <a class="footer-link" href="https://twitter.com/VivekKrishnanR6">Twitter</a>
+       <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+       <p class="copyright">©2022 Vivek Krishnan.R @Name of my project as soon as I decide it.</p>
+    </div>
+
+  </body>
+</html>

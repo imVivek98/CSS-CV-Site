@@ -1,0 +1,240 @@
+/* Box Model of HTML elements :
+ps : USE THE CHROME BOX TO FIND THE CODE THAT WE NEED TO PUT IN THE STYLE FILE TO GET THE REQUIRED EFFECTS.
+Every HTML element is simply a box.(We can see the figure every time pn google
+when we look at the chrome developoer tools).So , it has a border which surrounds
+the box(excludes the actual width and height of the box which we can specify.)We
+can specify the size of the border in clockwise direction.
+i.e :
+h1{
+  border: 0px 10px 20px 30px;
+}
+We can also specify the width and the height of the element box.
+Then we have the padding which is the space between the border and the items in
+the box.
+padding : 20px;
+We can then specify the margin which is the distance between two html element boxes.
+margin : 10px;   */
+
+
+body{
+  margin: 0;
+  text-align: center; /*Alligns every element to the center of the web page*/
+  font-family: "Merryweather", sans-serif;
+  font-size: 100%;
+  color: #40514E;
+
+/*  font-family: "Helvetica Nuea" Helvetica Arial sans-serif;  */
+/* Here we specify the font type from 5 categories -> sans-serif , serif , cursive ,
+fantasy , monospace. Here , some fonts may be used widely on macs and not on windows
+and other OS'es or vice versa.So we specify a main font and if not available , we
+give other options as well so that the website can be correctly rendered.Another
+way is to embed the font using links from fonts.google.com. */
+}
+
+/* h1{
+ width: 10%;  The width of the h1 block is made 20 % of the web page.This causes
+                 the text align property in the body to not work.So we do the following:
+ margin: 0 auto;
+If the width of a block is specified , then we have to use the margin property
+and set the auto value.Here it says that top and bottom margin value is 0 and
+the value of the left and right is auto.This is a short hand.
+margin: 1px; -> All four sides
+margin: ipx 2px; --> Top and bottom , left and right.
+margin: 1px 2px 3px 4px; --> All four sides in the clockeise direction
+margin: 10px 3px 4px; --> top , left and right , bottom
+
+We can also use percentages.
+
+*/
+
+p{
+  line-height: 2; /*Can change the distance between successive lines \.It improves readability*/
+  color: #40514E;
+}
+
+h1{
+  margin: 20px auto 0 auto;
+  padding: 100px 0 0 0;
+  font-family: "Sacramento" ,cursive;
+  /* line-height: 2;   Give a single value without units.*/
+  color: #66BFBF;  /*Just changes the color of the text */
+  font-size: 5.625rem; /*When sizing text , it is best to use rem.Most reliable.*/
+}
+  /* font-size: 90px; Font size given in pixels is static.We need to make it dynamic.
+  So we must specify font size in percentages. Here , 100% = 16px. */
+/*  font-size: 5.625em;  100%(static) = 16px(dynamic) = 1em(dynamic) */
+/* The problem with dynamic sizing is that if say , we specify the size in the
+the body(which is the parent of the element h1), then the size simply adds up.i.e,
+the 2em size is added to the 5.625em size that we specifies for the h1.This happens
+with specifying percentages as well.But it does not happen if we onlu specify values
+in pixels.In order to avoid this issue , we use 'rem' or root em which tells the
+element to ignore the styling property it recieved in the parent and only style according
+to the property given now. */
+
+h2{
+  font-family: "Montserrat" , sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal; /*To get rid of the bolding of the text and it become a bit lighter */
+  padding: 10px;
+}
+
+
+
+h3{
+  font-family: "Montserrat", sans-serif;
+  color: #11999E;
+}
+
+hr{
+  width: 4%;
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  margin: 100px auto;
+}
+
+
+
+a{
+  color: #11999E;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+}
+
+a:hover{
+  color: #EAF6F6;
+}
+
+
+.container{
+  padding-top: 75px;
+  position: relative;
+  background-color: #E4F9F5;
+  color: #40514E;
+
+}
+
+.middle-container{
+  color: #40514E;
+  padding: auto 0;
+}
+
+.bottom-container{
+  background-color: #66BFBF;
+  margin: auto;
+  padding: 50px 0 50px;
+}
+
+.bottom-cloud{
+  position: absolute;
+  left: 20%;
+}
+
+.top-cloud{
+  position: absolute;
+  right: 20%;
+  margin-top: 15px;
+}
+
+
+.pro{
+  text-decoration: underline;
+}
+
+
+
+
+.circular{
+  border-radius: 100%;
+}
+
+.ownImage{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+
+}
+
+.regImage1{
+  width: 25%;
+  float: left; /*This property makes the text wrap around the image left aligned */
+  /* We can use the property clear inorder to make sure that any particular
+                  text does not wrap around any image         clear left   */
+  margin-right: 30px;
+}
+
+.regImage2{
+  width: 25%;
+  float: right;
+  margin-right: 30px;
+}
+
+.skill-row{
+  width: 50%;       /*This makes sure the elements only occupy 50 % of the screen*/
+  margin: 100px auto 100px; /*We just centered the elements by putting the left and right auto*/
+  text-align: left;
+}
+
+/*
+.readpara{
+  clear: right;
+}
+This makes sure that the paragraph does not wrap arund the image.
+*/
+
+.main-desc{
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.footer-link{
+  color: #11999E;
+  font-size: 1rem;
+  text-decoration: none;
+
+}
+
+.contact{
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 0px;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+.contact:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+
+
+.contact-me{
+  width: 40%;
+  margin: 40px auto 60px;
+}
